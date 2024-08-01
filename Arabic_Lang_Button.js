@@ -17,7 +17,7 @@ function LangBtnArClick() {
   console.log(
     location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
   );
-  Switch_NavBar_Lang_Ar();
+  // Switch_NavBar_Lang_Ar();
   switch (location.pathname.substring(location.pathname.lastIndexOf("/") + 1)) {
     case "Home.html":
       alert("Heloo from Home AR");

@@ -17,7 +17,7 @@ function LangBtnEnClick() {
       location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
     );
 
-    Switch_NavBar_Lang_En();
+    // Switch_NavBar_Lang_En();
     switch (
       location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
     ) {
