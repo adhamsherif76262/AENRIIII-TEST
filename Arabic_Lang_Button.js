@@ -18,7 +18,7 @@ function LangBtnArClick() {
     location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
   );
   // Switch_NavBar_Lang_Ar();
-  switch (location.pathname.substring(location.pathname.lastIndexOf("/") + 1)) {      
+  switch (true) {      
 
       case location.href.includes("/Institute_Sections"):
           alert("Hello from IS");
@@ -43,9 +43,12 @@ function LangBtnArClick() {
     // case "Contact%20Us%20.html":
     // break;
     case (location.href.includes("/Contact_Us")):
-      alert("Heloo from contact AR");
-      Contact_H1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
+      alert("Heloo from contact AR" + Contact_PageTitle);
+      Contact_Load_Content_Ar()
       HomePageTitle[0].innerHTML = "الإتصال بنا";
+      
+      alert(location.href.includes("/Contact_Us"))
+      alert(location.href.includes("/Home"))
       Switch_NavBar_Lang_Ar();
       break;
 

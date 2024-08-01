@@ -24,10 +24,10 @@ function LangBtnEnClick() {
         HomePageTitle[0].innerHTML = "AERI Institute Sections Page";
         Switch_NavBar_Lang_En();
         break;
-        
+
       case location.href.includes("/Contact_Us"):
         alert("Heloo from contact ENG");
-        Contact_H1.textContent = "zzzzzzzzzzzzzz";
+        Contact_Load_Content_En()
         console.log(Contact_H1);
         HomePageTitle[0].innerHTML = "AERI Contact Us Page";
         Switch_NavBar_Lang_En();
