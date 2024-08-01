@@ -17,13 +17,13 @@ function LangBtnEnClick() {
       location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
     );
 
+    Switch_NavBar_Lang_En();
     switch (
       location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
     ) {
       case "Home.html":
         alert("Heloo from Home ENG");
         HomePageTitle[0].innerHTML = "AERI Home Page";
-        Switch_NavBar_Lang_En();
         break;
 
       case "Institute_Sections.html":
