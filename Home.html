@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        The Title tag Should be informative for SEO & should match the H1 tag of the page 
+        should also be limited to about 50-60 characters as not get truncated in the SERPs
+        ==> Use Article tag
+        ==> Use Alt Img attribute
+    -->
+    <title lang="" title="Page Title"></title>
+    <link rel="stylesheet" href="./NavBar .css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+    <nav id="Arabic_NavBar">
+        
+    </nav>
+    <nav id="English_NavBar"></nav>
+    <!-- <button  type="button" id="Language_Switch" title="Language Button" style="background-color: red; z-index: 100 !important;">sssssssss</button> -->
+    <video style="margin-left: 25%;margin-right: 25%;" width="500" height="700" src="./Bane - You Think Darkness is You Ally.mp4" autoplay muted controls loop>
+        <!-- <source src="./Bane -  You Think Darkness is You Ally  #shorts.mp4" type="video/mp4"> -->
+        ==> Your Browser Does Not Support This Video Tag
+    </video>
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/BslDlfjC82Y"
+        title="God of War : #10 تختيم افضل لعبة (گود اوف وار)" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <h1>7amadaaaaaaaaaaaaaaaaaa.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <!-- <script src="../JavaScript/Get Location.js"></script> -->
+<script  src="./NavBar_Footer_Language Changer.js"></script>
+<script  src="./Arabic_Lang_Button.js"></script>
+<script  src="./English_Lang_Button.js"></script>
+<script>
+    localStorage.setItem("Permenant_Language", "HALAAAA");
+    console.log("Lang From Home :: " + localStorage.getItem("Permenant_Language"));
+    if (
+        (localStorage.getItem("Permenant_Language") != "English" && localStorage.getItem("Permenant_Language") !=
+            "عربي")) {
+        const xhr = new XMLHttpRequest();
+        xhr.open(
+            "GET",
+            "https://api.geoapify.com/v1/ipinfo?&apiKey=b1eafd427c864fd8ad4009a48be4ec1f"
+        );
+        xhr.onload = function () {
+            //   localStorage.setItem("Permenant_Language", " ");
+            JSON.parse(xhr.responseText);
+            console.log(JSON.parse(xhr.responseText));
+            if (
+                JSON.parse(xhr.responseText).country.languages[0].name_native ===
+                "العربية"
+            ) {
+                localStorage.setItem("Permenant_Language", "عربي");
+                console.log("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
+                // sessionStorage.setItem("Permenant_Language", "عربي");
+                // sessionStorage.getItem()
+                // Permenant_Language = "عربي";
+                NavIsAR();
+            } else {
+                localStorage.setItem("Permenant_Language", "English");
+                alert("Lang From Home After Conversion :: " + localStorage.getItem("Permenant_Language"));
+                // sessionStorage.setItem("Permenant_Language", "English");
+                // Permenant_Language = "English";
+                NavIsEn();
+            }
+        };
+
+        xhr.send();
+    }
+    console.log(Hel);
+</script>
+ <script>
+     var Hel = "ZZZZZZZZZZZZZZZZZZZZZZZ";
+</script>
+<script>
+   console.log(Hel);
+</script>
+</body>
+</html>

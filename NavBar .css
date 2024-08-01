@@ -1,0 +1,375 @@
+/* @import "compass/css3"; */
+/* .pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}*/
+@font-face {
+   font-family: PT-Bold-Heading;
+   src: url(./PT\ Bold\ Heading.ttf);
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#LangBtnEn , #LangBtnAr{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+    transition: 1s;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+    border: double 10px rgb(0, 0, 119);
+}
+#LangBtnEn:hover , #LangBtnAr:hover{
+    color: white;
+    background-color: rgb(0, 0, 119);
+    border: double 10px white;
+    border-radius: 50%;
+}
+
+#NavBar_P_Ar{
+    /* color: rgb(0, 0, 119); */
+    color: black;
+    font-family: PT-Bold-Heading;
+    font-weight: bold;
+    font-size: 50px;
+}
+#NavBar_P_En{
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+#Arabic_NavBar , #English_NavBar{
+    filter: url('#goo');
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: 0.4s;
+    width: 100%;
+    margin-top: -150px;
+    height: 330px;
+    z-index: 99;
+}
+#Lower_NavBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Nav_Links_Container{
+    transition:0.5s;
+}
+.Nav_Links{
+    color: black;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    position: absolute;
+    left: 30%;
+    transition:0.5s;
+    animation: navlink_1 cubic-bezier(0.77, 0, 0.175, 1) 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.Nav_Links:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgb(0, 0, 119);
+    transition:0.5s;
+    transform-origin:right;
+    /* To Apply the reddish background from the very begining*/
+    transform:scaleX(0);
+    z-index:-1;
+}
+.Nav_Links:hover:before{
+      transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+
+.Nav_Links_En{
+    font-size: 25px;
+    width: min-content;
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+.Nav_Links_Ar{
+    font-size: 25px;
+    font-family: PT-Bold-Heading;
+}
+@keyframes navlink_1_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(900px, 0);
+   }
+}
+
+@keyframes navlink_2_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(780px, 0);
+   }
+}
+@keyframes navlink_3_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(590px, 0);
+   }
+}
+@keyframes navlink_4_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(410px, 0);
+   }
+}
+@keyframes navlink_5_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(210px, 0);
+   }
+}
+@keyframes navlink_6_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(10px, 0);
+   }
+}
+@keyframes navlink_7_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(-180px, 0);
+   }
+}
+@keyframes navlink_8_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(-280px, 0);
+   }
+}
+@keyframes navlink_9_Ar {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(-440px, 0);
+   }
+}
+ .Nav_Links_Ar:nth-child(1) {
+	 animation-name: navlink_1_Ar;
+     /* display: none; */
+}
+ .Nav_Links_Ar:nth-child(2) {
+	 animation-name: navlink_2_Ar;
+    }
+    .Nav_Links_Ar:nth-child(3) {
+        animation-name:navlink_3_Ar;
+    }
+    .Nav_Links_Ar:nth-child(4) {
+        animation-name: navlink_4_Ar;
+        /* display: none; */
+}
+ .Nav_Links_Ar:nth-child(5) {
+	 animation-name: navlink_5_Ar;
+    }
+    .Nav_Links_Ar:nth-child(6) {
+        animation-name: navlink_6_Ar;
+    }
+    .Nav_Links_Ar:nth-child(7) {
+        animation-name: navlink_7_Ar;
+    }
+    .Nav_Links_Ar:nth-child(8) {
+        animation-name:navlink_8_Ar;
+}
+ .Nav_Links_Ar:nth-child(9) {
+	 animation-name:navlink_9_Ar;
+}
+@keyframes navlink_1_En {
+   0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(880px, 0);
+   }
+}
+
+@keyframes navlink_2_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(725px, 0);
+   }
+}
+@keyframes navlink_3_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(550px, 0);
+   }
+}
+@keyframes navlink_4_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(360px, 0);
+   }
+}
+@keyframes navlink_5_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(200px, 0);
+   }
+}
+@keyframes navlink_6_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(20px, 0);
+   }
+}
+@keyframes navlink_7_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(-150px, 0);
+   }
+}
+@keyframes navlink_8_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(-310px, 0);
+   }
+}
+@keyframes navlink_9_En {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(-440px, 0);
+   }
+}
+.Nav_Links_En:nth-child(1){
+	 animation-name:navlink_1_En;
+}
+.Nav_Links_En:nth-child(2){
+	 animation-name:navlink_2_En;
+}
+.Nav_Links_En:nth-child(3){
+	 animation-name:navlink_3_En;
+}
+.Nav_Links_En:nth-child(4){
+	 animation-name:navlink_4_En;
+}
+.Nav_Links_En:nth-child(5){
+	 animation-name:navlink_5_En;
+}
+.Nav_Links_En:nth-child(6){
+	 animation-name:navlink_6_En;
+}
+.Nav_Links_En:nth-child(7){
+	 animation-name:navlink_7_En;
+}
+.Nav_Links_En:nth-child(8){
+	 animation-name:navlink_8_En;
+}
+.Nav_Links_En:nth-child(9){
+	 animation-name:navlink_9_En;
+}
+
+.NavBar_Logos{
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+.D_None{
+    display: none;
+}
+.Text_Direction_En{
+    direction: ltr;
+    text-align: justify;
+}
+.Text_Direction_Ar{
+    direction: rtl;
+    text-align: justify;
+}
+.Flex_Direction_En{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Flex_Direction_Ar{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
