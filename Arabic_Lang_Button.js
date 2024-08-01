@@ -17,14 +17,14 @@ function LangBtnArClick() {
   console.log(
     location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
   );
+  Switch_NavBar_Lang_Ar();
   switch (location.pathname.substring(location.pathname.lastIndexOf("/") + 1)) {
     case "Home.html":
       alert("Heloo from Home AR");
       HomePageTitle[0].innerHTML = "الرئيسية";
-      Switch_NavBar_Lang_Ar();
       break;
       
-      case "Institute%20Sections%20.html":
+      case "Institute_Sections.html":
           alert("Hello from IS");
           HomePageTitle[0].innerHTML = "الأقسام";
       Switch_NavBar_Lang_Ar();
@@ -46,7 +46,7 @@ function LangBtnArClick() {
     // break;
     // case "Contact%20Us%20.html":
     // break;
-    case "Contact%20Us%20.html":
+    case "Contact_Us.html":
       alert("Heloo from contact AR");
       Contact_H1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
       HomePageTitle[0].innerHTML = "الإتصال بنا";

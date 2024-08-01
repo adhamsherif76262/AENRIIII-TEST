@@ -16,6 +16,7 @@ function LangBtnEnClick() {
   console.log(
       location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
     );
+
     switch (
       location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
     ) {
@@ -25,13 +26,13 @@ function LangBtnEnClick() {
         Switch_NavBar_Lang_En();
         break;
 
-      case "Institute%20Sections%20.html":
+      case "Institute_Sections.html":
         alert("Heloo from Institute Sections ENG");
         HomePageTitle[0].innerHTML = "AERI Institute Sections Page";
         Switch_NavBar_Lang_En();
         break;
 
-      case "Contact%20Us%20.html":
+      case "Contact_Us.html":
         alert("Heloo from contact ENG");
         Contact_H1.textContent = "zzzzzzzzzzzzzz";
         console.log(Contact_H1);

@@ -16,14 +16,14 @@ var Ar_NavTemplate = `
     <div id="Lower_NavBar">
       <div id = "Nav_Links_Container">
           <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_Ar" href="./Home.html">الرئيسية</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Institute Sections .html">الأقسام</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Helping Units .html">وحدات مساعدة</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Institute Branches .html">فروع المعهد</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Patents .html">برءات الاختراع</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Permanent Exhibition .html">المعرض الدائم</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Research Projects.html">مشاريع بحثية</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Institute_Sections.html">الأقسام</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Helping_Units.html">وحدات مساعدة</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Institute_Branches.html">فروع المعهد</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Patents.html">برءات الاختراع</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Permanent_Exhibition.html">المعرض الدائم</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Research_Projects.html">مشاريع بحثية</a>
           <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Overview.html">نبذة</a>
-          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Contact Us .html">الإتصال بنا</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="./Contact_Us.html">الإتصال بنا</a>
       </div>
     </div>
   </div>
@@ -42,14 +42,14 @@ ${LangBtnAr}
 <div id="navbar">
         <div id="Lower_NavBar">
         <div id = "Nav_Links_Container">
-                <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_En" href="./Contact Us .html">Contact Us</a>
+                <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_En" href="./Contact_Us.html">Contact Us</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Overview.html">Overview</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Research Projects.html">Research Projects</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Permanent Exhibition .html">Permanent Exhibition</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Patents .html">Patents</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Institute Branches .html">Institute Branches</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Helping Units .html">Helping Units</a>
-                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Institute Sections .html">Institute Sections</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Research_Projects.html">Research Projects</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Permanent_Exhibition.html">Permanent Exhibition</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Patents.html">Patents</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Institute_Branches.html">Institute Branches</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Helping_Units.html">Helping Units</a>
+                <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Institute_Sections.html">Institute Sections</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="./Home.html">Home</a>
             </div>
           </div>

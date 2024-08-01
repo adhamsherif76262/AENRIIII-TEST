@@ -1,0 +1,24 @@
+[[redirects]]
+from = "/Home"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Contact_Us"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Institute_Sections"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Index-4"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Index_5"
+to = "https://www.youtube.com/"
+status = 200
