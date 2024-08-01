@@ -19,24 +19,26 @@ function LangBtnEnClick() {
 
     // Switch_NavBar_Lang_En();
     switch (true) {
-      case location.href.includes("/Institute_Sections"):
+      case location.href.includes("/Institute_Sections") ||
+        location.href.includes("/institute_sections"):
         alert("Heloo from Institute Sections ENG");
         HomePageTitle[0].innerHTML = "AERI Institute Sections Page";
         Switch_NavBar_Lang_En();
         break;
 
-      case location.href.includes("/Contact_Us"):
+      case location.href.includes("/Contact_Us") ||
+        location.href.includes("/contact_us"):
         alert("Heloo from contact ENG");
-        Contact_Load_Content_En()
+        Contact_Load_Content_En();
         console.log(Contact_H1);
         HomePageTitle[0].innerHTML = "AERI Contact Us Page";
         Switch_NavBar_Lang_En();
         break;
-        
+
       default:
-          alert("Heloo from Home ENG");
-          HomePageTitle[0].innerHTML = "AERI Home Page";
-          Switch_NavBar_Lang_En();
+        alert("Heloo from Home ENG");
+        HomePageTitle[0].innerHTML = "AERI Home Page";
+        Switch_NavBar_Lang_En();
         break;
     }
 }
